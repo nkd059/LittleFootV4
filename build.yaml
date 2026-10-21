@@ -1,8 +1,8 @@
 ---
 include:
-  - board: nice_nano@1//zmk
+  - board: nice_nano//zmk
     shield: littlefoot
     snippet: zmk-usb-logging
 
-  - board: nice_nano@1//zmk
+  - board: nice_nano//zmk
     shield: settings_reset
