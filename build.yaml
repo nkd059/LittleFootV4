@@ -2,6 +2,7 @@
 include:
   - board: nice_nano@1//zmk
     shield: littlefoot
+    snippet: zmk-usb-logging
 
   - board: nice_nano@1//zmk
     shield: settings_reset
