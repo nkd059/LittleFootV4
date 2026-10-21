@@ -1,8 +1,0 @@
-file_format: "1"
-id: littlefoot
-name: LittleFoot
-type: shield
-url: https://github.com/nkd059/LittleFootV3
-requires: [pro_micro]
-features:
-  - keys
