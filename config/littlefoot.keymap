@@ -27,19 +27,19 @@
             >;
         };
 
-        layer_1 {
+        Nav {
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &out OUT_TOG  &bt BT_CLR         &bt BT_CLR_ALL
-&to 2           &to 3             &trans        &trans        &trans        &trans  &trans  &trans        &trans             &kp C_BRIGHTNESS_INC
-&trans          &trans            &trans        &trans        &trans        &trans  &trans  &trans        &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC
-&kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &trans        &trans  &trans  &trans        &kp C_VOLUME_DOWN  &kp C_BRI_DEC
-&bt BT_PRV      &bt BT_NXT        &to 0         &trans
+&bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans             &trans          &out OUT_TOG    &bt BT_CLR         &bt BT_CLR_ALL
+&to 2           &to 3             &trans        &trans        &trans        &trans             &trans          &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT
+&trans          &trans            &trans        &trans        &trans        &kp LG(BACKSPACE)  &kp UP_ARROW    &kp ENTER       &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC
+&kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &trans        &kp LEFT           &kp DOWN_ARROW  &kp RIGHT       &kp C_VOLUME_DOWN  &kp C_BRI_DEC
+&bt BT_PRV      &bt BT_NXT        &to 0         &to 0
             >;
         };
 
         Prodrafts {
             bindings = <
-&Prodrafts_Lasso_backspace  &kp E          &trans        &trans  &trans  &trans  &trans  &trans  &trans             &trans
+&Prodrafts_Lasso_backspace  &kp E          &trans        &trans  &trans  &trans  &trans  &trans  &trans             &to 1
 &kp LG(Z)                   &kp LG(LS(Z))  &trans        &trans  &trans  &trans  &trans  &trans  &trans             &trans
 &kp N5                      &kp NUMBER_6   &kp N7        &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_UP    &kp C_BRI_INC
 &kp NUMBER_2                &kp NUMBER_3   &kp NUMBER_4  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC
@@ -49,11 +49,11 @@
 
         Noteful {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4    &kp N5         &kp NUMBER_6  &trans  &trans  &trans  &trans
-&kp F         &kp E          &kp H          &kp LG(N0)      &kp LG(EQUAL)  &trans        &trans  &trans  &trans  &trans
-&kp G         &kp A          &kp BACKSPACE  &kp LG(LS(N0))  &kp LG(MINUS)  &trans        &trans  &trans  &trans  &trans
-&kp LG(Z)     &kp LG(LS(Z))  &kp LG(TAB)    &kp LC(TAB)     &trans         &trans        &trans  &trans  &trans  &trans
-&kp LEFT      &kp RIGHT      &kp LG(N0)     &kp LG(TAB)
+&kp F       &kp E           &kp H          &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_6   &trans         &trans          &trans          &to 1
+&kp G       &kp A           &kp BACKSPACE  &kp NUMBER_3   &kp NUMBER_4  &trans         &trans         &trans          &trans          &kp LS(SPACE)
+&kp LG(Z)   &kp LG(LS(Z))   &kp BACKSPACE  &kp N5         &kp NUMBER_6  &trans         &trans         &trans          &kp UP_ARROW    &kp SPACE
+&kp LG(N0)  &kp LG(LS(N0))  &kp LG(MINUS)  &kp LG(EQUAL)  &trans        &kp LG(MINUS)  &kp LG(EQUAL)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
+&kp LEFT    &kp RIGHT       &kp LG(N0)     &kp LG(TAB)
             >;
         };
     };
