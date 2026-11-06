@@ -53,7 +53,7 @@
 &kp F         &kp E          &kp H          &kp LG(N0)      &kp LG(EQUAL)  &trans        &trans  &trans  &trans  &trans
 &kp G         &kp A          &kp BACKSPACE  &kp LG(LS(N0))  &kp LG(MINUS)  &trans        &trans  &trans  &trans  &trans
 &kp LG(Z)     &kp LG(LS(Z))  &kp LG(TAB)    &kp LC(TAB)     &trans         &trans        &trans  &trans  &trans  &trans
-&kp LEFT      &kp RIGHT      &to 1          &kp LG(TAB)
+&kp LEFT      &kp RIGHT      &kp LG(N0)     &kp LG(TAB)
             >;
         };
     };
